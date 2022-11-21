@@ -2,9 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AuthModule } from './auth/auth.module';
+import { UserModule } from './user/user.module';
+import { PublicModule } from './public/public.module';
 @NgModule({
   declarations: [
     AppComponent
@@ -12,7 +13,9 @@ import { AuthModule } from './auth/auth.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AuthModule
+    AuthModule,
+    UserModule,
+    PublicModule
   ],
   providers: [],
   bootstrap: [AppComponent]
